@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Отзывы – Almaz Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="reviews.html" class="nav-link active">Отзывы</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section class="reviews" style="padding-top:120px;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">✦ Отзывы</span>
+                    <h2 class="section-title">Что говорят <span class="accent">клиенты</span></h2>
+                    <p class="section-subtitle">Реальные отзывы людей, которые уже носят наши часы</p>
+                </div>
+                <div class="reviews-grid" id="reviews-grid">
+                    <!-- Отзывы подгрузятся из Supabase через JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                    <p class="footer-copy">© 2026 Все права защищены</p>
+                </div>
+                <div class="footer-links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/almazwatch" target="_blank" class="social-link">📱 Telegram</a>
+                    <a href="https://t.me/almazwatchbot" target="_blank" class="social-link">🤖 Бот</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
