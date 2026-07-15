@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Контакты – Almaz Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="reviews.html" class="nav-link">Отзывы</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link active">Контакты</a>
+                </nav>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section class="contacts" style="padding-top:120px;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">✦ Контакты</span>
+                    <h2 class="section-title">Свяжись <span class="accent">с нами</span></h2>
+                    <p class="section-subtitle">Мы всегда на связи и готовы ответить на ваши вопросы</p>
+                </div>
+                <div class="contacts-grid">
+                    <div class="contacts-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>Telegram (быстрый ответ)</strong>
+                                <a href="https://t.me/almaz_watch" target="_blank">@almaz_watch</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🤖</span>
+                            <div>
+                                <strong>Telegram-бот для заказов</strong>
+                                <a href="https://t.me/almazwatchbot" target="_blank">@almazwatchbot</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Телефон</strong>
+                                <a href="tel:+79083420172">+7 908 342-01-72</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:almazwatch@example.com">almazwatch@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Адрес мастерской</strong>
+                                <span>Казань, ул. Мусы Бигиева, 36</span>
+                            </div>
+                        </div>
+                        <a href="https://t.me/almazwatchbot" class="btn-primary btn-large" target="_blank" style="text-align:center;justify-content:center;">
+                            📩 Написать в Telegram
+                        </a>
+                    </div>
+                    <div class="contacts-map">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&source=constructor" 
+                            width="100%" 
+                            height="350" 
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                        <p class="map-address">
+                            Россия, Республика Татарстан, Казань, Авиастроительный район, ул. Мусы Бигиева, 36
+                        </p>
+                        <div style="padding:12px 20px;text-align:center;border-top:1px solid var(--border-color);">
+                            <a href="https://yandex.ru/maps/?rtext=~55.8474,49.1206&rtt=auto" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:600;">
+                                🚗 Построить маршрут
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                    <p class="footer-copy">© 2026 Все права защищены</p>
+                </div>
+                <div class="footer-links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/almazwatch" target="_blank" class="social-link">📱 Telegram</a>
+                    <a href="https://t.me/almazwatchbot" target="_blank" class="social-link">🤖 Бот</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
