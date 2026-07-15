@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Товар – Almaz Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="reviews.html" class="nav-link">Отзывы</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section style="padding-top:120px;padding-bottom:80px;">
+            <div class="container">
+                <div id="product-detail" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;max-width:600px;margin:0 auto;">
+                    <div style="font-size:60px;color:var(--accent);">⌚</div>
+                    <h1 style="font-size:36px;font-weight:900;">Страница товара</h1>
+                    <p style="color:var(--text-secondary);font-size:18px;line-height:1.7;">
+                        Здесь будет отображаться информация о выбранных часах. 
+                        Эта страница пока в разработке.
+                    </p>
+                    <p style="color:var(--text-secondary);font-size:16px;">
+                        Чтобы заказать часы, перейдите в каталог или напишите нам в Telegram.
+                    </p>
+                    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:20px;">
+                        <a href="catalog.html" class="btn-primary">Перейти в каталог</a>
+                        <a href="https://t.me/almazwatchbot" target="_blank" class="btn-secondary">📩 Заказать в Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                    <p class="footer-copy">© 2026 Все права защищены</p>
+                </div>
+                <div class="footer-links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/almazwatch" target="_blank" class="social-link">📱 Telegram</a>
+                    <a href="https://t.me/almazwatchbot" target="_blank" class="social-link">🤖 Бот</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
