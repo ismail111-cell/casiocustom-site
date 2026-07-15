@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Almaz Watch – кастомные часы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="reviews.html" class="nav-link">Отзывы</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <!-- ГЕРОЙ -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">✦ Создаём уникальные часы с душой</div>
+                        <h1 class="hero-title">Твои <span class="accent">уникальные</span> часы <br>с индивидуальным дизайном</h1>
+                        <p class="hero-text">Более 1000 довольных клиентов. Легендарные Casio и «Восток» с любым принтом — от логотипа до фотографии. Сделаем часы, которых больше ни у кого нет.</p>
+                        <div class="hero-buttons">
+                            <a href="https://t.me/almazwatchbot" class="btn-primary" target="_blank">📩 Заказать в Telegram</a>
+                            <a href="catalog.html" class="btn-secondary">Смотреть каталог ↓</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item"><span class="stat-number">1000+</span><span class="stat-label">довольных клиентов</span></div>
+                            <div class="stat-item"><span class="stat-number">7 лет</span><span class="stat-label">на рынке</span></div>
+                            <div class="stat-item"><span class="stat-number">24/7</span><span class="stat-label">поддержка</span></div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="watch-3d">
+                            <div class="watch-face">
+                                <div class="watch-time">10:08</div>
+                                <div class="watch-brand">CASIO</div>
+                                <div class="watch-text">ALMAZ<br>WATCH</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОЧЕМУ МЫ -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">✦ Почему мы</span>
+                    <h2 class="section-title">Создаём <span class="accent">истории</span> на запястье</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>Ручная сборка</h3>
+                        <p>Каждые часы собираются вручную с любовью и вниманием к деталям.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>Оригинальные Casio</h3>
+                        <p>Используем только оригинальные часы Casio и «Восток».</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Любой дизайн</h3>
+                        <p>Логотип, фото, имя, герб — воплотим любую вашу идею.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>Доставка по миру</h3>
+                        <p>Отправляем СДЭКом в любую точку России и мира.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОСЛЕДНИЕ РАБОТЫ -->
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">✦ Наши работы</span>
+                    <h2 class="section-title">Последние <span class="accent">кастомы</span></h2>
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Товары подгрузятся из Supabase через JS -->
+                </div>
+                <div style="text-align:center;margin-top:40px;">
+                    <a href="catalog.html" class="btn-primary">Смотреть все часы →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">✦ Отзывы</span>
+                    <h2 class="section-title">Что говорят <span class="accent">клиенты</span></h2>
+                </div>
+                <div class="reviews-grid" id="reviews-grid">
+                    <!-- Отзывы подгрузятся из Supabase через JS -->
+                </div>
+                <div style="text-align:center;margin-top:40px;">
+                    <a href="reviews.html" class="btn-secondary">Читать все отзывы →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                    <p class="footer-copy">© 2026 Все права защищены</p>
+                </div>
+                <div class="footer-links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/almazwatch" target="_blank" class="social-link">📱 Telegram</a>
+                    <a href="https://t.me/almazwatchbot" target="_blank" class="social-link">🤖 Бот</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
