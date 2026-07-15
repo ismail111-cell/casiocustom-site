@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>О нас – Almaz Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="reviews.html" class="nav-link">Отзывы</a>
+                    <a href="about.html" class="nav-link active">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section class="about" style="padding-top:120px;">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="section-tag">✦ О нас</span>
+                        <h2 class="section-title">Создаём <span class="accent">истории</span> на запястье</h2>
+                        <p class="about-text">
+                            Меня зовут Мухаммад, и мы с моей командой создаём эксклюзивные часы Casio и «Восток», которых нет ни у кого другого. 
+                            Мы воплощаем любые идеи: от логотипа компании до портрета близкого человека.
+                        </p>
+                        <p class="about-text">
+                            Более 1000 довольных клиентов уже носят наши часы. Каждая пара собирается вручную с любовью и вниманием к деталям.
+                            Мы используем только оригинальные часы Casio и «Восток Амфибия» — проверенные временем механизмы.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature"><span class="feature-icon">⚙️</span><span>Ручная сборка</span></div>
+                            <div class="feature"><span class="feature-icon">💎</span><span>Оригинальные Casio</span></div>
+                            <div class="feature"><span class="feature-icon">🎨</span><span>Любой дизайн</span></div>
+                            <div class="feature"><span class="feature-icon">📦</span><span>Доставка по миру</span></div>
+                            <div class="feature"><span class="feature-icon">⏱️</span><span>7 лет на рынке</span></div>
+                            <div class="feature"><span class="feature-icon">❤️</span><span>1000+ довольных клиентов</span></div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;background:var(--bg-primary);border-radius:var(--radius);padding:40px;text-align:center;border:1px solid var(--border-color);">
+                            <div style="font-size:80px;margin-bottom:20px;">⌚</div>
+                            <h3 style="font-family:'Orbitron',sans-serif;font-size:24px;color:var(--accent);">ALMAZ WATCH</h3>
+                            <p style="color:var(--text-secondary);margin-top:12px;">Создаём часы с душой <br>с 2019 года</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">ALMAZ<span class="logo-accent">WATCH</span></span>
+                    <p class="footer-copy">© 2026 Все права защищены</p>
+                </div>
+                <div class="footer-links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/almazwatch" target="_blank" class="social-link">📱 Telegram</a>
+                    <a href="https://t.me/almazwatchbot" target="_blank" class="social-link">🤖 Бот</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
